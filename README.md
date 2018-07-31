@@ -1,0 +1,1 @@
+# An Opscode Chef cookbook for WordPress
