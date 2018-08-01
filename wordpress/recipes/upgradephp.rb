@@ -1,5 +1,11 @@
+execute "install-python-software-properties" do
+  command "apt-get install python-software-properties"
+end
+
 apt_repository 'ondrej-php' do
-  uri          'ppa:ondrej/php'
+  uri 'ppa:ondrej/php'
+  action :add
+  deb_src true
 end
 
 apt_update 'update'
