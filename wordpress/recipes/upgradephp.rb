@@ -2,9 +2,7 @@ apt_repository 'ondrej-php' do
   uri          'ppa:ondrej/php'
 end
 
-execute 'update' do
-  command "sudo apt-get update"
-end
+apt_update 'update'
 
 apt_package 'php7.2' do
   action :install
