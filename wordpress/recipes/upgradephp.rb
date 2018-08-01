@@ -11,7 +11,7 @@ execute "update-repository-source" do
 end
 
 execute "install-php7.2" do
-  command "apt install -y php7.2"
+  command "apt install php7.2"
 end
 
 execute "install-php-associate" do
