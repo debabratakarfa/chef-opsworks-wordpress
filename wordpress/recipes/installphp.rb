@@ -10,7 +10,7 @@ end
 
 apt_update 'update'
 
-apt_package 'php7.2' do
+apt_package 'php7.2-cli' do
   action :install
 end
 
@@ -19,10 +19,6 @@ apt_package 'php-pear' do
 end
 
 apt_package 'php7.2-curl' do
-  action :install
-end
-
-apt_package 'php7.2-dev' do
   action :install
 end
 
@@ -35,10 +31,6 @@ apt_package 'php7.2-json' do
 end
 
 apt_package 'php7.2-mbstring' do
-  action :install
-end
-
-apt_package 'php7.2-mcrypt' do
   action :install
 end
 
